@@ -172,11 +172,21 @@ p {
 article,
 section {
   background-color: white;
-  padding-bottom: 00.5rem;
+  padding-bottom: 0.5rem;
 }
 
 main {
   padding: 2rem 0;
+}
+
+.article1,
+.article4 {
+  padding-bottom: 0.5rem;
+}
+
+.article1 a,
+.article4 a {
+  margin-bottom: 0.5rem;
 }
 
 .grid {
