@@ -1,0 +1,330 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  padding: 0 0.5rem;
+  color: #ef4a37;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+}
+
+article,
+section {
+  background-color: white;
+  padding-bottom: 00.5rem;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.section {
+  grid-row: span 3;
+}
+
+.article3 {
+  grid-row: span 2;
+}
+
+.section,
+.article1,
+.article3,
+.article2,
+.article4,
+.article5 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 700px;
+  }
+  .grid {
+    -ms-grid-columns: (minmax(200px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+  .section {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    max-width: 420px;
+  }
+  .grid {
+    -ms-grid-columns: (minmax(200px, 1fr))[1];
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+  .article3 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .section {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .article2,
+  .article4,
+  .article5 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+body {
+  background-color: #3a4a4f;
+}
+
+.header {
+  padding: 1rem 0;
+}
+
+.header h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+.header-menu {
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  background-color: white;
+}
+
+.header-menu a {
+  color: #3196be;
+  font-weight: 700;
+}
+
+.header-menu a:hover {
+  color: blue;
+}
+
+.article1 {
+  padding-bottom: 0;
+}
+
+.article1 a {
+  color: #ef4a37;
+}
+
+.section img {
+  width: 100%;
+  border-radius: 45%;
+}
+
+.article3 img {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.article2 {
+  padding-bottom: 0;
+}
+
+.article2 a {
+  background-color: #ef4a37;
+  color: white;
+  display: block;
+  padding: 0.5rem;
+}
+
+.article4 {
+  padding: 0;
+}
+
+.article4 h2 {
+  background-color: #3196be;
+  color: white;
+  padding: 0.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
