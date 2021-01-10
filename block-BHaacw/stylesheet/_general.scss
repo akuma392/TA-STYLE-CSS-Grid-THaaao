@@ -31,8 +31,15 @@ p {
 article,
 section {
   background-color: white;
-  padding-bottom: 00.5rem;
+  padding-bottom: 0.5rem;
 }
 main {
   padding: 2rem 0;
+}
+.article1,
+.article4 {
+  padding-bottom: 0.5rem;
+  a {
+    margin-bottom: 0.5rem;
+  }
 }
